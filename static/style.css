@@ -1,0 +1,207 @@
+body{
+    height: 100vh;
+    background-position: center;
+    background-image: url("../backgroung.png");
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+.home-page{
+    width: 600px;
+    padding: 50px;
+    margin: auto;
+}
+.home-page h2{
+    margin-top: 20px;
+}
+.home-text{
+    color:rgb(86, 102, 243);
+    position: relative;
+    margin: 20px;
+    display: block;
+    font-weight: 500;
+}
+img{
+    margin-left: 75px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.form{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.form input{
+    box-sizing: border-box;
+    width:80%;
+}
+.form button{
+    cursor: pointer;
+}
+p a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.form .joiner-form{
+    display: none;
+}
+.main_clone_page{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.main_left_part{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.main_video_part{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+video{
+    display: block;
+    max-height: 400;
+    border-radius: 5px;
+    object-fit: cover;
+    position: relative;
+}
+#user_videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.user_video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+h1{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    color: rgb(96, 208, 245);
+}
+.main_btn_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: auto;
+    height: 85px;
+    background-color: rgb(28, 34, 103);
+}
+.btn_grp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.control_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding: 13px;
+    margin-left: 190px;
+    color:aliceblue;
+}
+.main_right_part{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+.chat_window{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.user_message{
+    color: rgb(50, 47, 47);
+    font-size: 18px;
+    list-style-type: none;
+    margin: 12px;
+    border: 2px solid rgb(152, 148, 148);
+    padding: 10px;
+}
+.message_footer{
+    padding: 10px;
+    display: flex;
+    bottom: 0%;
+    position: relative;
+}
+.message_footer input{
+    color: rgb(32, 30, 30);
+    background-color: transparent;
+    height: 50px;
+    flex-grow: 1;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 0px;
+}
+@media (max-width: 570px) {
+    .main_clone_page{
+        margin: auto;
+    }
+    .main_left_part{
+        flex: 1;
+    }
+    .main_video_part{
+        width: 550px;
+        flex-wrap: wrap;
+    }
+    #user_videos{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 450px;
+    }
+    .user_video{
+        height: auto;
+        flex-grow: 1;
+    }
+    video{
+        height: auto;
+        width: 100%;
+    }
+    .main_btn_list{
+        width: 550px;
+        height: 130px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+    .control_btn{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 8px;
+        align-items: center;
+        padding: 8px;
+    }
+    .control_btn i{
+        font-size: 20px;
+    }
+    .control_btn span{
+        font-size: 14px;
+    }
+    
+}
