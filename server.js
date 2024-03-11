@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const server = require('https').Server(app);
+const server = require('http').Server(app);
 var session = require('express-session');
 const bodyParser = require('body-parser');
 const io = require('socket.io')(server,{
