@@ -1,4 +1,4 @@
-import { io } from "socket.io-client";
+
 const socket = io('/', transports = ["websocket", "polling"]);
 const chat_window = document.getElementById('chat_window');
 const user_videos = document.getElementById('user_videos');
