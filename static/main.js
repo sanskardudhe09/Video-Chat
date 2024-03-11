@@ -16,7 +16,7 @@ window.onload = ()=>{
 }
 var peer = new Peer( {
     path: "/peerjs",
-    port: 3001,
+    port: 3000,
     host: '/'
 })
 
