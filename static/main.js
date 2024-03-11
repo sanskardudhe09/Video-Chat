@@ -1,5 +1,5 @@
-
-const socket = io('https://video-chat-01g6.onrender.com');
+const io = require('socket.io-clinet')
+const socket = io('https://video-chat-01g6.onrender.com', transports = ["websocket"]);
 const chat_window = document.getElementById('chat_window');
 const user_videos = document.getElementById('user_videos');
 const myvideo = document.createElement('video');
