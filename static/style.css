@@ -1,7 +1,6 @@
 body{
     height: 100vh;
     background-position: center;
-    background-image: url("../backgroung.png");
 }
 *{
    margin: 0;
@@ -204,4 +203,12 @@ h1{
         font-size: 14px;
     }
     
+}
+@media screen and (max-width: 1400px){
+    .main_clone_page{
+        height: auto;
+    }
+    .control_btn{
+        margin-left: 100px;
+    }
 }
