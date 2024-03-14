@@ -204,7 +204,7 @@ h1{
     }
     
 }
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) and(min-width: 571px){
     .main_clone_page{
         height: auto;
     }
