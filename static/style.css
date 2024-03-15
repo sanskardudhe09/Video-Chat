@@ -165,7 +165,7 @@ h1{
         flex: 1;
     }
     .main_video_part{
-        width: 550px;
+        width: 100%;
         flex-wrap: wrap;
     }
     #user_videos{
