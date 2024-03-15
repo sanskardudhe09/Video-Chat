@@ -144,7 +144,11 @@ const removeIdleVideos = () => {
     let len = document.getElementsByTagName("video").length;
     if(len > 1){
         for(let i = 0; i < len; i++){
-            document.getElementsByTagName("video")[i].style.width = ((100 / len) + 25) + "%";
+            if(navigator.userAgent.search("Chrome") >= 0){
+                document.getElementsByTagName("video")[i].style.width = ((100 / len)) + "%";
+            }else{
+                document.getElementsByTagName("video")[i].style.width = ((100 / len) + 25) + "%";
+            }
             //console.log(document.getElementsByClassName("user_video")[i]);
         }
     }
