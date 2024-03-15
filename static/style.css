@@ -51,6 +51,8 @@ p a{
 .main_clone_page{
     display: flex;
     flex-direction: row;
+    height: -moz-available;
+    height: -webkit-fill-available;
 }
 .main_left_part{
     flex: 1;
